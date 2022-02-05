@@ -1,4 +1,5 @@
 import React from 'react';
+import './LearnMore.css'
 import icon5 from '../../../image/Photos and Icons/icon5.png'
 import icon6 from '../../../image/Photos and Icons/icon6.png'
 import icon7 from '../../../image/Photos and Icons/icon7.png'
@@ -6,7 +7,7 @@ import icon7 from '../../../image/Photos and Icons/icon7.png'
 
 const LearnMore = () => {
     return (
-        <div style={{ marginTop: 50 }}>
+        <div className='learn-more' style={{ marginTop: 50 }}>
             <h3>Learn more about GG</h3>
             <div style={{
                 display: 'flex',

@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './FirstSec.css'
 import bg from '../../../image/Photos and Icons/bg.png'
 import bg1 from '../../../image/Photos and Icons/bg-1.png'
 import phone from '../../../image/Photos and Icons/phone.png'
@@ -11,7 +12,7 @@ const FirstSec = () => {
 
 
         <>
-            <div style={{
+            <div className='home-container' style={{
                 background: `url(${bg1})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
@@ -20,11 +21,12 @@ const FirstSec = () => {
                 width: "100%",
                 display: 'flex',
                 // justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                // background: "rgba(33, 205, 40, 0.6)"
             }}>
 
 
-                <div style={{
+                <div className='text-container' style={{
                     color: "white", width: "60%", paddingLeft: 40, textAlign: "left"
 
                 }}>
@@ -45,7 +47,7 @@ const FirstSec = () => {
                     </div>
                 </div>
 
-                <div style={{
+                <div className='phone-container' style={{
                     background: `url(${phone})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
@@ -92,7 +94,8 @@ const FirstSec = () => {
                 alignItems: 'center',
                 color: 'white',
                 // backgroundColor: "black",
-                opacity: 0.7
+                opacity: 0.6
+                // background: "rgba(76,205,140, )"
 
             }}>
 
@@ -112,7 +115,7 @@ const FirstSec = () => {
 
             </div>
 
-            <div style={{
+            <div className='home-container-2' style={{
                 height: 400, width: '100%', backgroundColor: '#eeeeee',
                 // padding: 10,
                 display: 'flex',
