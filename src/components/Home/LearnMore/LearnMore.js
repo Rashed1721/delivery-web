@@ -36,7 +36,7 @@ const LearnMore = () => {
                         employees
                     </p>
 
-                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent' }}>GG PERKS</button>
+                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', top: '35px' }}>GG PERKS</button>
                 </div>
                 <div style={{
                     border: "2px solid goldenrod",
@@ -57,7 +57,7 @@ const LearnMore = () => {
                         work each day
                     </p>
 
-                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: '10px' }}>DRIVER AFFILLIATE</button>
+                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', top: '60px' }}>DRIVER AFFILLIATE</button>
                 </div>
                 <div className='div-2' style={{
                     border: "2px solid goldenrod",
@@ -76,7 +76,7 @@ const LearnMore = () => {
                     <p>Cenerate revenue before the daily <br />
                         lunch rush begins
                     </p>
-                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: 10 }}>DRIVER AFFILLIATE</button>
+                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: 10 }}>RESTAURENT AFFILLIATE</button>
                 </div>
 
 
