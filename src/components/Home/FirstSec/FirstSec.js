@@ -27,7 +27,7 @@ const FirstSec = () => {
 
 
                 <div className='text-container' style={{
-                    color: "white", width: "60%", paddingLeft: 40, textAlign: "left"
+                    color: "white", width: "55%", paddingLeft: 40, textAlign: "left"
 
                 }}>
 
@@ -50,16 +50,18 @@ const FirstSec = () => {
                 <div className='phone-container' style={{
                     background: `url(${phone})`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    // backgroundPosition: 'center',
-                    width: "330px",
+                    backgroundSize: '100% 120%',
+                    backgroundPosition: 'cover',
+                    width: "30%",
+                    paddingTop: '20px',
+                    paddingBottom: '50px',
                     height: "100%",
 
 
                 }}>
 
                     <div style={{ fontFamily: 'bold' }}>
-                        <div style={{ display: 'flex', justifyContent: 'Space-evenly', marginTop: 70 }}>
+                        <div style={{ display: 'flex', justifyContent: 'Space-evenly', marginTop: 70, overflow: 'hidden' }}>
                             <div> <h5>Mon</h5></div>
                             <div> <h5>Thu</h5></div>
                             <h5>Wed</h5>
@@ -72,9 +74,9 @@ const FirstSec = () => {
                         </div>
                         <h4 style={{ color: '#04AA6D', margin: 0 }}>Daily Menu</h4>
                         <h5 style={{ margin: 0 }}>Ordaring ends at 10.30am</h5>
-                        <img src={salad} width="70%" alt="" />
+                        <img src={salad} width="70%" className='img-fluid' alt="" />
 
-                        <h2 style={{ marginTop: -20 }}>salad</h2>
+                        <h2 className='salad'>salad</h2>
                     </div>
                 </div>
 
