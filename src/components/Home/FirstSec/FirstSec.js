@@ -17,12 +17,12 @@ const FirstSec = () => {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 WebkitBackgroundSize: 'cover',
-                height: 500,
+                height: 600,
                 width: "100%",
                 display: 'flex',
-                // justifyContent: 'center',
+                justifyContent: 'center',
                 alignItems: 'center',
-                // background: "rgba(33, 205, 40, 0.6)"
+
             }}>
 
 
@@ -42,7 +42,7 @@ const FirstSec = () => {
                             <h5 style={{ margin: 0 }}><i class="fas fa-check"></i>simply reply via SMS or use our website to order</h5>
                         </div>
 
-                        <input style={{ width: '70%', height: 35, borderColor: 'transparent', borderRadius: 6, marginTop: 20 }} type="text" placeholder='ENTER YOUR LOCATION TO SEE THE MENU TODAY' />
+                        <input className='input' style={{ width: '70%', height: 35, borderColor: 'transparent', borderRadius: 6, marginTop: 20 }} type="text" placeholder='ENTER YOUR LOCATION TO SEE THE MENU TODAY' />
 
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const FirstSec = () => {
                 }}>
 
                     <div style={{ fontFamily: 'bold' }}>
-                        <div style={{ display: 'flex', justifyContent: 'Space-evenly', marginTop: 40 }}>
+                        <div style={{ display: 'flex', justifyContent: 'Space-evenly', marginTop: 70 }}>
                             <div> <h5>Mon</h5></div>
                             <div> <h5>Thu</h5></div>
                             <h5>Wed</h5>
@@ -116,7 +116,7 @@ const FirstSec = () => {
             </div>
 
             <div className='home-container-2' style={{
-                height: 400, width: '100%', backgroundColor: '#eeeeee',
+                height: 500, width: '100%', backgroundColor: '#eeeeee',
                 // padding: 10,
                 display: 'flex',
                 justifyContent: 'center',
@@ -131,7 +131,7 @@ const FirstSec = () => {
                     </p>
                 </div>
 
-                <div style={{ width: '45%' }}>
+                <div className='iframe' style={{ width: '45%' }}>
                     <div className='iframe-container'>
                         <iframe width="90%" height="300" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>

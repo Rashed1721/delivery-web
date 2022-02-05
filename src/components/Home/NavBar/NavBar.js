@@ -26,7 +26,7 @@ const NavBar = () => {
                             <Form className="d-flex">
                                 <i style={{ color: '#0cce87', marginTop: 15 }} class="fas fa-search"></i>
                                 <FormControl
-                                    style={{ borderColor: 'transparent', width: '600px' }}
+                                    style={{ borderColor: 'transparent', width: '300px' }}
                                     type="search"
                                     placeholder="your company"
                                     className="me-2"

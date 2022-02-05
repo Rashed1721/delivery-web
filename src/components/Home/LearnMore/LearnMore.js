@@ -1,5 +1,5 @@
 import React from 'react';
-import './LearnMore.css'
+import css from './LearnMore.css'
 import icon5 from '../../../image/Photos and Icons/icon5.png'
 import icon6 from '../../../image/Photos and Icons/icon6.png'
 import icon7 from '../../../image/Photos and Icons/icon7.png'
@@ -7,9 +7,10 @@ import icon7 from '../../../image/Photos and Icons/icon7.png'
 
 const LearnMore = () => {
     return (
-        <div className='learn-more' style={{ marginTop: 50 }}>
+        <div style={{ marginTop: 50 }}>
             <h3>Learn more about GG</h3>
-            <div style={{
+            <div className='learn-more' style={{
+
                 display: 'flex',
                 justifyContent: 'space-evenly',
                 marginTop: 50,
@@ -17,29 +18,35 @@ const LearnMore = () => {
 
             }}>
 
-                <div style={{
+                <div className='div-1' style={{
                     border: "2px solid goldenrod ",
                     borderRadius: 8,
-                    width: '25%',
+                    marginLeft: 60,
+                    width: '80%',
+                    height: 450,
                     padding: 10,
-                    boxSizing: 'border-box'
+
+                    // boxSizing: 'border-box'
 
                 }}>
                     <img src={icon5} alt="" />
                     <h3>GG Perks</h3>
-                    <p>we allow employers to offer <br />
+                    <p >we allow employers to offer <br />
                         subsidize meals to their <br />
                         employees
                     </p>
 
-                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: 10 }}>GG PERKS</button>
+                    <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent' }}>GG PERKS</button>
                 </div>
                 <div style={{
                     border: "2px solid goldenrod",
                     borderRadius: 8,
-                    width: '25%',
+                    width: '80%',
                     height: 500,
+                    marginLeft: 60,
+                    marginRight: 60,
                     padding: 10,
+                    height: 450,
                     boxSizing: 'border-box'
 
                 }}>
@@ -52,11 +59,14 @@ const LearnMore = () => {
 
                     <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: '10px' }}>DRIVER AFFILLIATE</button>
                 </div>
-                <div style={{
+                <div className='div-2' style={{
                     border: "2px solid goldenrod",
                     borderRadius: 8,
-                    width: '25%',
+                    width: '80%',
                     padding: 30,
+                    marginRight: 60,
+                    height: 450,
+
                     boxSizing: 'border-box'
 
                 }}>
@@ -68,6 +78,8 @@ const LearnMore = () => {
                     </p>
                     <button style={{ backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", paddingTop: 5, paddingBottom: 5, width: '90%', color: 'white', borderColor: 'transparent', position: 'relative', bottom: 10 }}>DRIVER AFFILLIATE</button>
                 </div>
+
+
 
             </div>
             <hr />

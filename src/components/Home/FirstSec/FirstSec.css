@@ -1,21 +1,22 @@
 @media only screen and (max-width: 600px) {
     .home-container{
-        flex-wrap: wrap;
-        min-height: 1000px;
+        height: 600px;
     }
-    .text-container{
-        /* min-height: 400px; */
-        margin:auto
-    }
-    .phone-container{
-        /* margin-top: 35px; */
-        margin:35px auto;
-        height: 200px;  
-    }
-   .home-container-2{
-       flex-wrap: wrap;
-       flex-direction: row;
+   .input{
+       margin-top:0px
    }
+  .home-container-2{      
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .iframe{
+      margin-top: 20px;
+  }
+
+
   }
 
 
