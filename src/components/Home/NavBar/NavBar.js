@@ -1,13 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
 import logo from '../../../image/Photos and Icons/logo.png'
 
-import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+
+import { Button, Container, Form, FormControl, InputGroup, Modal, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
+
 const NavBar = () => {
+
+
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+
+    const handleClose = () => setShow(false);
 
     return (
         <div>
+
+
+
+            <div >
+
+
+                <Modal show={show}>
+                    <h1 style={{ textAlign: "center", padding: '20px' }}>Sign in</h1>
+
+                    <Container>
+                        <Form style={{ padding: "20px" }}>
+                            <Form.Group className="mb-3" controlId="formGroupEmail">
+                                <Form.Label><h6>Email  or phone Number</h6></Form.Label>
+                                <Form.Control style={{ padding: '12px', border: '2px solid grey', borderRadius: '10px' }} type="email" placeholder="you@example.com" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupPassword">
+                                <Form.Label><h6>Password</h6></Form.Label>
+                                <Form.Control style={{ padding: '12px', border: '2px solid grey', borderRadius: '10px' }} type="password" placeholder="Enter 6 charecter or more" />
+                            </Form.Group>
+                            <h6 style={{ color: 'red' }}>ForgetPasword?</h6>
+                            <Form.Check type="checkbox" label="Rembember me" />
+
+                            <Button style={{ width: '80%', backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", margin: "20px", marginLeft: '40px' }}
+                                onClick={handleClose}
+                            >CONNEXION</Button>
+
+
+                            <p style={{ textAlign: 'center' }}>Dont have a peace account?</p>
+                            <h6 style={{ textAlign: 'center', marginTop: -10, paddingBottom: 10, color: "red " }}>Sign Up Here</h6>
+
+                        </Form>
+                    </Container>
+                </Modal>
+            </div>
+
+
+
             <Navbar bg="light" expand="lg">
                 <Container style={{ margin: 'auto' }}>
                     <Navbar.Brand href="#home"><img src={logo} width='100px' alt="" /></Navbar.Brand>
@@ -34,13 +79,16 @@ const NavBar = () => {
                                 />
 
                             </Form>
-                            <Nav.Link href="#home"><button className='signIn'>Sign in</button></Nav.Link>
-                            <Nav.Link href="#link"><button className='signUp'> Sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
+                            <button onClick={handleShow} className='signIn'>Sign in</button>
+                            <Nav.Link href="/signup"><button className='signUp'> Sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
+
 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
+
         </div >
     );
 };
