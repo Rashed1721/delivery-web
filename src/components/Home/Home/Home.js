@@ -28,7 +28,7 @@ const Home = () => {
             <PhoneNumber></PhoneNumber>
             <CreditCard></CreditCard>
             <ReceiveText></ReceiveText> */}
-            {/* <PasswordReset></PasswordReset> */}
+            <PasswordReset></PasswordReset>
             <DishType></DishType>
 
         </div>

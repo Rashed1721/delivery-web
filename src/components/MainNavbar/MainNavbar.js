@@ -16,7 +16,9 @@ const MainNavbar = () => {
     }
 
     return (
-        <Container>
+
+
+        <>
             <div style={{ display: "flex" }}>
 
                 <div style={{ width: '85%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRight: '2px solid grey' }}>
@@ -62,17 +64,21 @@ const MainNavbar = () => {
 
             {
                 value === true && (
-                    <div className='MainNav-menue' style={{ display: 'flex', justifyContent: 'space-around', width: '80%', margin: ' 50px  auto', }}>
-                        <div><h3>Profile</h3> </div>
-                        <div><h3>My Orders</h3> </div>
-                        <div><h3>Promotion</h3> </div>
-                        <div><h3>My Card</h3> </div>
-                        <div><h3>Log Out</h3> </div>
+                    <div style={{ width: '100%', backgroundColor: "rgb(215 213 213)" }}>
+                        <div className='MainNav-menue' style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '100%', height: "130px", margin: ' 30px   auto ', padding: 20 }}>
+                            <div><h3>Profile</h3> </div>
+                            <div><h3>My Orders</h3> </div>
+                            <div><h3>Promotion</h3> </div>
+                            <div><h3>My Card</h3> </div>
+                            <div><h3>Log Out</h3> </div>
+                        </div>
                     </div>
 
                 )
             }
-        </Container>
+        </>
+
+
     );
 };
 
