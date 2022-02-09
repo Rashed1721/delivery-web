@@ -3,7 +3,10 @@
         height: 600px;
     }
    .input{
-       margin-top:0px
+       margin-top:0px;
+   }
+   .phone-container{
+       display:none
    }
   .home-container-2{      
       flex-wrap: wrap;

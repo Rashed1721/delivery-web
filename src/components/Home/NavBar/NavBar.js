@@ -35,7 +35,7 @@ const NavBar = () => {
                                 <Form.Label><h6>Password</h6></Form.Label>
                                 <Form.Control style={{ padding: '12px', border: '2px solid grey', borderRadius: '10px' }} type="password" placeholder="Enter 6 charecter or more" />
                             </Form.Group>
-                            <h6 style={{ color: 'red' }}>ForgetPasword?</h6>
+                            <NavLink href="/passwordreset">  <h6 style={{ color: 'red' }}>ForgetPasword?</h6></NavLink>
                             <Form.Check type="checkbox" label="Rembember me" />
 
                             <Button style={{ width: '80%', backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", margin: "20px", marginLeft: '40px' }}
@@ -80,7 +80,7 @@ const NavBar = () => {
 
                             </Form>
                             <button onClick={handleShow} className='signIn'>Sign in</button>
-                            <Nav.Link href="/signup"><button className='signUp'> Sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
+                            <Nav.Link href="/login"><button className='signUp'> Sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
 
 
                         </Nav>

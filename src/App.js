@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Modal1 from './components/Modal/Modal1';
 import NotFound from './components/NotFound/NotFound';
 import SignUp from './components/SignUp/SignUp/SignUp';
+import LogInFrom from './components/LogIn/LogInFrom/LogInFrom';
+import PasswordReset from './components/LogIn/PasswordReset/PasswordReset';
 
 function App() {
   return (
@@ -20,8 +22,11 @@ function App() {
           <Route path="/modal1">
             <Modal1></Modal1>
           </Route>
-          <Route exact path="/signup">
-            <SignUp></SignUp>
+          <Route exact path="/login">
+            <LogInFrom></LogInFrom>
+          </Route>
+          <Route exact path="/passwordreset">
+            <PasswordReset></PasswordReset>
           </Route>
           <Route exact path="/notfound">
             <NotFound></NotFound>

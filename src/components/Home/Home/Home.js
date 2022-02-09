@@ -1,5 +1,7 @@
 import React from 'react';
+import DishType from '../../DishType/DishType';
 import Footer from '../../Footer/Footer';
+import PasswordReset from '../../LogIn/PasswordReset/PasswordReset';
 import AddCompany from '../../SignUp/AddCompany/AddCompany';
 import CreateAccount from '../../SignUp/CreateAccount/CreateAccount';
 import CreditCard from '../../SignUp/CreditCard/CreditCard';
@@ -26,6 +28,8 @@ const Home = () => {
             <PhoneNumber></PhoneNumber>
             <CreditCard></CreditCard>
             <ReceiveText></ReceiveText> */}
+            {/* <PasswordReset></PasswordReset> */}
+            <DishType></DishType>
 
         </div>
     );
