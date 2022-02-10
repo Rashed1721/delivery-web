@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .food-detail{
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .iteam-detail{
+        margin-top: 50px;
+    }
+    .food-button{
+        display: flex;
+    }
+   
+  }

@@ -1,10 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
-import { Button, Col, Container, Form, FormControl, Nav, Navbar, NavDropdown, Offcanvas, ProgressBar, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, Nav, Navbar, NavLink, Modal, ProgressBar, Row } from 'react-bootstrap';
 import Footer from '../../Footer/Footer';
 import logo from '../../../image/Photos and Icons/logo.png';
 
 const LogInFrom = () => {
+
+
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+
+    const handleClose = () => setShow(false);
 
 
     const [fromStep, setFromStep] = useState(0)
@@ -45,24 +51,69 @@ const LogInFrom = () => {
         <div>
             <Container>
 
+
+
+
+
+
+
+
+                <div >
+
+
+                    <Modal show={show}>
+                        <h1 style={{ textAlign: "center", padding: '20px' }}>Sign in</h1>
+
+                        <Container>
+                            <Form style={{ padding: "20px" }}>
+                                <Form.Group className="mb-3" controlId="formGroupEmail">
+                                    <Form.Label><h6>Email  or phone Number</h6></Form.Label>
+                                    <Form.Control style={{ padding: '12px', border: '2px solid grey', borderRadius: '10px' }} type="email" placeholder="you@example.com" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formGroupPassword">
+                                    <Form.Label><h6>Password</h6></Form.Label>
+                                    <Form.Control style={{ padding: '12px', border: '2px solid grey', borderRadius: '10px' }} type="password" placeholder="Enter 6 charecter or more" />
+                                </Form.Group>
+                                <NavLink href="/passwordreset">  <h6 style={{ color: 'red' }}>ForgetPasword?</h6></NavLink>
+                                <Form.Check type="checkbox" label="Rembember me" />
+
+                                <Button style={{ width: '80%', backgroundImage: " linear-Gradient( to right, #0cce87, #51b855)", margin: "20px", marginLeft: '40px' }}
+                                    onClick={handleClose}
+                                >CONNEXION</Button>
+
+
+                                <p style={{ textAlign: 'center' }}>Dont have a peace account?</p>
+                                <h6 style={{ textAlign: 'center', marginTop: -10, paddingBottom: 10, color: "red " }}>Sign Up Here</h6>
+
+                            </Form>
+                        </Container>
+                    </Modal>
+                </div>
+
+
+
+
+
+
+
                 <div>
                     <div>
                         <div style={{
                             display: 'flex',
-                            // justifyContent: 'space-between',
+                            justifyContent: 'space-between',
                             alignItems: 'center',
-                            // width: '100%',
+                            width: '100%',
                             height: 80,
 
 
                         }}>
                             <div className='logo' style={{ justifyContent: 'flex-end', }}>
-                                <img src={logo} width='180' alt="" />
+                                <Nav.Link href="/home"><img src={logo} width='180' alt="" /></Nav.Link>
                             </div>
 
 
                             <div style={{ height: 80, display: 'flex', alignItems: 'center', borderLeft: '2px solid grey', marginLeft: 80 }}>
-                                <button style={{ fontWeight: 700, color: "#0cce87", borderColor: 'transparent', backgroundColor: '#f8f9fb', marginLeft: '5px' }}>Sign in</button>
+                                <button onClick={handleShow} style={{ fontWeight: 700, color: "#0cce87", borderColor: 'transparent', backgroundColor: '#f8f9fb', marginLeft: '5px' }}>Sign in</button>
                                 <Nav style={{}}><button className='signUp'> sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav>
 
 
@@ -70,12 +121,9 @@ const LogInFrom = () => {
                             </div>
 
 
-                            <div>
-
-                            </div>
-
-
                         </div>
+
+
                         <h4 style={{ textAlign: 'left', marginBottom: '60px', marginTop: '40px' }}>SIGN UP</h4>
                         <hr />
 

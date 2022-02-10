@@ -4,7 +4,7 @@ import './NavBar.css'
 import logo from '../../../image/Photos and Icons/logo.png'
 
 
-import { Button, Container, Form, FormControl, InputGroup, Modal, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
+import { Button, Col, Container, Form, FormControl, Modal, Nav, Navbar, NavDropdown, NavLink } from 'react-bootstrap';
 
 const NavBar = () => {
 
@@ -17,7 +17,7 @@ const NavBar = () => {
     return (
         <div>
 
-
+            {/* modal */}
 
             <div >
 
@@ -53,25 +53,25 @@ const NavBar = () => {
 
 
 
-            <Navbar bg="light" expand="lg">
+            <Navbar style={{ paddingTop: 0, paddingBottom: 0 }} bg="light" expand="lg">
+
                 <Container style={{ margin: 'auto' }}>
-                    <Navbar.Brand href="#home"><img src={logo} width='100px' alt="" /></Navbar.Brand>
+                    <Navbar.Brand href="#home"><img src={logo} width='200px' height="100px" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto" >
 
-                            <i style={{ color: '#0cce87', marginTop: 15, marginLeft: 100 }} class="fas fa-map-marker-alt"></i>
-                            <NavDropdown style={{ paddingRight: 100 }} title="Paris" id="basic-nav-dropdown">
-                                {/* <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
-                            <Form className="d-flex">
-                                <i style={{ color: '#0cce87', marginTop: 15 }} class="fas fa-search"></i>
+
+                            <h3> <i style={{ color: '#0cce87', marginTop: 30, marginLeft: 100 }} class="fas fa-map-marker-alt"></i></h3>
+                            <p style={{ fontSize: 22, marginLeft: 12, marginTop: 27, }}>Paris</p>
+
+                            <h3><i style={{ marginLeft: 100, marginTop: 33 }} class="fas fa-caret-down"></i></h3>
+
+
+                            <Form style={{ borderRight: '2px solid grey', height: '100px', width: '', }} className="d-flex">
+                                <h3 style={{ backgroundColor: 'white', }}> <i style={{ color: '#0cce87', marginTop: 37, marginLeft: 25 }} class="fas fa-search"></i></h3>
                                 <FormControl
-                                    style={{ borderColor: 'transparent', width: '300px' }}
+                                    style={{ borderColor: 'transparent', width: '100%' }}
                                     type="search"
                                     placeholder="your company"
                                     className="me-2"
@@ -79,13 +79,21 @@ const NavBar = () => {
                                 />
 
                             </Form>
-                            <button onClick={handleShow} className='signIn'>Sign in</button>
-                            <Nav.Link href="/login"><button className='signUp'> Sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
+
+
+
+
+                            <div style={{ display: "flex", alignItems: 'center', marginLeft: 30 }}>
+                                <button style={{ width: 100, fontWeight: 700, height: '40px', borderRadius: 10 }} onClick={handleShow} className='signIn'>SIGN IN</button>
+                                <Nav.Link href="/login"><button style={{ width: 100, fontWeight: 700, height: '40px', borderRadius: 10 }} className='signUp'>SIGN UP <i class="fas fa-long-arrow-alt-right"></i></button></Nav.Link>
+                            </div>
+
 
 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
+
             </Navbar>
 
 

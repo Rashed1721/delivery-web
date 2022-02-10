@@ -3,14 +3,13 @@
     color: #0cce87;
     border-color: transparent;
     background-color:#f8f9fb;
-    border-left: 1px solid grey;
     margin-left: 5px;
 }
 .signUp{
     font-weight: 700;
     color: #ffff;
     border-color: transparent;
-    border-radius: 7px;
+    border-radius: 10px;
     background-color:#0cce87;
     margin-left: -3px;
 }

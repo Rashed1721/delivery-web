@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Nav } from 'react-bootstrap';
+import { Container, Nav, Row } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 import logo from '../../image/Photos and Icons/logo.png'
 import MainNavbar from '../MainNavbar/MainNavbar';
@@ -24,6 +24,7 @@ const DishType = () => {
                 {/*  item container-1 */}
 
                 <div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }} >
+
 
                     {/* iteam-1 */}
                     <div style={{ width: '20%', height: '250px' }}>
@@ -70,6 +71,9 @@ const DishType = () => {
 
                         </div>
                     </div>
+
+
+
                     {/* iteam-3 */}
                     <div style={{ width: '20%', height: '250px', backgroundColor: 'rgb(223 26 163 / 91%)' }}>
 
@@ -114,6 +118,7 @@ const DishType = () => {
 
                         </div>
                     </div>
+
 
                 </div>
 
