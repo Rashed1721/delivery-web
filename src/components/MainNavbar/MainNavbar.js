@@ -66,11 +66,11 @@ const MainNavbar = () => {
                 value === true && (
                     <div style={{ width: '100%', backgroundColor: "rgb(215 213 213)" }}>
                         <div className='MainNav-menue' style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '100%', height: "130px", margin: ' 30px   auto ', padding: 20 }}>
-                            <div><h3>Profile</h3> </div>
-                            <div><h3>My Orders</h3> </div>
-                            <div><h3>Promotion</h3> </div>
-                            <div><h3>My Card</h3> </div>
-                            <div><h3>Log Out</h3> </div>
+                            <div>    <Nav.Link href="/home"><h3 style={{ color: "black" }}>Profile</h3></Nav.Link> </div>
+                            <div>   <Nav.Link href="/home"><h3 style={{ color: "black" }}>My Orders</h3> </Nav.Link> </div>
+                            <div>    <Nav.Link href="/home"><h3 style={{ color: "black" }}>Promotion</h3></Nav.Link> </div>
+                            <div>     <Nav.Link href="/home"><h3 style={{ color: "black" }}>My Card</h3></Nav.Link></div>
+                            <div>   <Nav.Link href="/home"><h3 style={{ color: "black" }}>Log Out</h3> </Nav.Link> </div>
                         </div>
                     </div>
 

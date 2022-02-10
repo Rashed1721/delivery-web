@@ -61,7 +61,7 @@ const LogInFrom = () => {
                             </div>
 
 
-                            <div style={{ height: 80, display: 'flex', alignItems: 'center', borderLeft: '2px solid grey', marginLeft: 800 }}>
+                            <div style={{ height: 80, display: 'flex', alignItems: 'center', borderLeft: '2px solid grey', marginLeft: 80 }}>
                                 <button style={{ fontWeight: 700, color: "#0cce87", borderColor: 'transparent', backgroundColor: '#f8f9fb', marginLeft: '5px' }}>Sign in</button>
                                 <Nav style={{}}><button className='signUp'> sign Up <i class="fas fa-long-arrow-alt-right"></i></button></Nav>
 

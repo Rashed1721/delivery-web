@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, Nav, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import MainNavbar from '../MainNavbar/MainNavbar';
 
@@ -36,7 +37,8 @@ const Shop = () => {
                                         <h3 style={{ color: 'white' }}>MEAT</h3>
                                     </div>
                                     <div>
-                                        <h4 style={{ fontWeight: 700 }}>Cheeseburger W/ Chips</h4>
+
+                                        <Nav.Link href="/home"><h4 style={{ fontWeight: 700, color: 'black' }}>Cheeseburger W/ Chips</h4></Nav.Link>
                                     </div>
                                 </div>
 

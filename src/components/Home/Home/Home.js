@@ -1,4 +1,5 @@
 import React from 'react';
+import FoodDetail from '../../FoodDetail/FoodDetail'
 import DishType from '../../DishType/DishType';
 import Footer from '../../Footer/Footer';
 import PasswordReset from '../../LogIn/PasswordReset/PasswordReset';
@@ -32,6 +33,7 @@ const Home = () => {
             <PasswordReset></PasswordReset>
             <DishType></DishType>
             <Shop></Shop>
+            <FoodDetail></FoodDetail>
 
         </div>
     );
