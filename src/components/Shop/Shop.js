@@ -22,26 +22,26 @@ const Shop = () => {
             <Container style={{ marginTop: 60 }}>
                 <h2 style={{ marginTop: 40, textAlign: "left", fontWeight: 700, borderBottom: "2px solid grey", paddingBottom: 20 }}>Sandiago Burger</h2>
 
-                <div>
-                    <Row>
+                <div style={{ marginTop: 25 }}>
+                    <Row >
                         <Col style={{ marginBottom: '50px' }} md={4} sm={6}>
                             <div>
                                 <div style={{ height: 200, backgroundColor: "black" }}>
 
                                 </div>
 
-                                <div style={{ display: 'flex', marginTop: 15, justifyContent: "space-between" }}>
+                                <div style={{ display: 'flex', marginTop: 15, justifyContent: "space-between", marginBottom: 30 }}>
                                     <div style={{ width: 100, height: 40, backgroundColor: 'orange' }}>
                                         <h3 style={{ color: 'white' }}>MEAT</h3>
                                     </div>
                                     <div>
-                                        <h4>Cheeseburger W/ Chips</h4>
+                                        <h4 style={{ fontWeight: 700 }}>Cheeseburger W/ Chips</h4>
                                     </div>
                                 </div>
 
                                 <div style={{ display: 'flex', alignItems: 'end', justifyContent: 'space-between' }}>
                                     <div style={{ textAlign: 'left', width: '45%' }}>
-                                        <h2>$11.99</h2>
+                                        <h2 style={{ fontWeight: 700 }}>$11.99</h2>
                                         <h5 style={{ color: 'grey' }}>+$2 delivery + tax</h5>
                                     </div>
                                     <div style={{ display: 'flex', border: '2px solid grey', width: '50%', borderRadius: 9 }}>
