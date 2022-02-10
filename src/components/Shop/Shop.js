@@ -20,7 +20,7 @@ const Shop = () => {
 
 
             <Container style={{ marginTop: 60 }}>
-                <h2 style={{ marginTop: 40, textAlign: "left", fontWeight: 700, borderBottom: "2px solid grey", paddingBottom: 20 }}>Sandiago Burger</h2>
+                <h2 style={{ marginTop: 40, textAlign: "left", fontWeight: 700, borderBottom: "2px solid grey", paddingBottom: 20 }}>SAN DIEGO BURGER CO</h2>
 
                 <div style={{ marginTop: 25 }}>
                     <Row >
