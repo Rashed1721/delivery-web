@@ -1,18 +1,19 @@
 import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import Footer from '../Footer/Footer';
 import MainNavbar from '../MainNavbar/MainNavbar';
 
 const Shop = () => {
     return (
         <div>
             <MainNavbar></MainNavbar>
-            <div style={{ display: 'flex', justifyContent: 'space-around', border: '2px solid grey', marginTop: 50 }}>
-                <div style={{ padding: '20px', width: '50%' }} >
+            <div style={{ display: 'flex', justifyContent: 'space-around', border: '2px solid grey', marginTop: 50, }}>
+                <div style={{ padding: '20px', width: '50%', paddingTop: 3, paddingBottom: 3 }} >
                     <h1 style={{ fontWeight: 400 }}>February 2nd January</h1>
                     <p style={{ color: 'lightgreen', fontSize: 30 }}>Order Before 10.00am</p>
                 </div>
 
-                <div style={{ padding: '20px', borderLeft: '2px solid grey', width: '50%', }}>
+                <div style={{ padding: '20px', borderLeft: '2px solid #534d4d', width: '50%', paddingTop: 3, paddingBottom: 3 }}>
                     <h1>Your pickup Location</h1>
                     <h5 style={{ color: 'green', fontWeight: 800 }}>Face Foundation | 10505 Sorrento Valley Rd (Suite 175)</h5>
                 </div>
@@ -66,8 +67,16 @@ const Shop = () => {
                         </Col>
 
                     </Row>
+                    <div style={{ border: '3px solid lightGreen', width: '60%', margin: ' 110px auto' }}>
+                        <h2 style={{ margin: "30px 15px" }}>Regarder le menu du Mercredi 02/02 </h2>
+                    </div>
                 </div>
             </Container>
+            <div>
+
+                <hr />
+                <Footer ></Footer>
+            </div>
         </div >
     );
 };
